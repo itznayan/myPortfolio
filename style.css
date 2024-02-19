@@ -32,6 +32,7 @@
 
 body {
   font-family: "Poppins", sans-serif;
+  
 }
 
 html {
@@ -57,9 +58,11 @@ nav,
 }
 
 nav {
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
-  height: 17vh;
+  height: 12vh;
+  width: 95vw;
+  margin: 10px;
   font-family: 'Edu VIC WA NT Beginner', cursive;
   
 }
@@ -77,7 +80,9 @@ a {
 }
 
 a:hover {
-  color: rgb(6, 148, 204);
+  font-size: 1.75rem;
+  transform: ease-in-out 600ms;
+  color: darkorchid;
   text-decoration: underline;
   text-underline-offset: 1rem;
   text-decoration-color: rgb(181, 181, 181);
@@ -90,6 +95,10 @@ a:hover {
 
 .logo:hover {
   cursor: default;
+  font-size: 35px;
+  transition: ease-in-out 600ms;
+  font-weight: 600;
+
 }
 
 /* HAMBURGER MENU */
