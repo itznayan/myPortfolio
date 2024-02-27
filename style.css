@@ -16,6 +16,9 @@
   margin: 0;
   padding: 0;
 }
+html{
+  scroll-behavior: smooth;
+}
 
 .lang1{
   font-family: Big-Guy;
