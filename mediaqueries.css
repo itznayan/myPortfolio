@@ -1,3 +1,8 @@
+@media (max-width:780px){
+  body{
+    position: relative;
+  }
+}
 
 @media screen and (max-width: 1200px) {
   #desktop-nav {
