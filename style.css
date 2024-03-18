@@ -93,7 +93,9 @@ a:hover {
   font-family: marchel;
   transform: translate3d(0rem, 0rem, 0);
 }
-
+.section__pic-container img {
+  z-index: -1;
+}
 .logo:hover {
   cursor: default;
   scale: 1.2;
