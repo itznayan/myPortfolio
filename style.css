@@ -532,6 +532,10 @@ article .icon {
   text-align: center;
 }
 
+article {
+  text-align: left;
+}
+
 .menu-links {
   margin-top: 10px;
   background-color: rgba(255, 250, 255, 1);
