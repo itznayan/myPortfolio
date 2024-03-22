@@ -171,8 +171,9 @@ a:hover {
   transition: all ease-in-out 350ms;
   border-bottom: 1px solid black;
   border-radius: 100px;
-  box-shadow: 1px 10px 8px rgba(0, 0, 0, 0.5);
+  box-shadow: 2px 5px 3px rgba(0, 0, 0, 0.5);
   box-sizing: border-box;
+
 }
 
 .text-container {
@@ -532,10 +533,21 @@ article .icon {
 }
 
 .menu-links {
+  margin-top: 10px;
   background-color: rgba(255, 250, 255, 1);
-  box-shadow: 2px 2px 9px black;
+  box-shadow: 4px 4px 4px black;
   border-radius: 1px;
   gap: 4px;
   display: flex;
   flex-direction: column;
+  border-radius: 10%;
+}
+
+.extra-back {
+  margin: 1px auto;
+  padding: 30px;
+  background-color: rgba(0, 255, 255, 0.121);
+  width: 40vw;
+  text-align: center;
+  box-shadow: 10px 10px 3px black;
 }
