@@ -11,3 +11,5 @@ function openLinkInNewTab(url) {
 // Example usage
 var linkUrl = "https://www.example.com";
 openLinkInNewTab(linkUrl);
+
+
