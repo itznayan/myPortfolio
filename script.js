@@ -5,10 +5,9 @@ function toggleMenu() {
   icon.classList.toggle("open");
 }
 function openLinkInNewTab(url) {
-  window.open(url, '_blank');
+  window.open(url, "_blank");
 }
 
 // Example usage
-var linkUrl = 'https://www.example.com';
+var linkUrl = "https://www.example.com";
 openLinkInNewTab(linkUrl);
-
