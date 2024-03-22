@@ -315,7 +315,7 @@ button:after {
 
 .section__pic-container img {
   border-radius: 50%;
-  box-shadow: 5px 5px 10px black;
+  filter: drop-shadow(-5px 5px 5px rgba(167, 162, 162, 0.797));
 }
 
 button:hover:after {
