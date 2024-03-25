@@ -314,9 +314,36 @@ button:after {
   transition: all 0.5s;
 }
 
+@keyframes in-filter {
+  0% {
+    transform: translateX(-200px);
+    box-shadow: 1px 10px 12px rgb(13, 12, 12);
+  }
+
+  35% {
+    transform: rotate(30deg);
+    box-shadow: 10px 10px 12px rgb(13, 12, 12);
+  }
+
+  85% {
+    transform: rotate(-35deg);
+    box-shadow: 1px 1px 30px rgb(13, 12, 12);
+  }
+
+  100% {
+    transform: translateX(00px);
+    box-shadow: 1px 1px 2px rgb(13, 12, 12);
+  }
+
+}
+
 .section__pic-container img {
+
+  animation: in-filter 2s ease-in-out 1;
+
   border-radius: 50%;
-  filter: drop-shadow(-5px 5px 5px rgba(167, 162, 162, 0.797));
+
+  filter: drop-shadow(5px 5px 10px rgb(249, 247, 247));
 }
 
 button:hover:after {
@@ -550,8 +577,8 @@ article {
 .extra-back {
   margin: 1px auto;
   padding: 30px;
-  background-color: rgba(0, 255, 255, 0.121);
-  width: 40vw;
+  background-color: rgba(0, 255, 255, 0.312);
+  width: clamp(10vw, 75vw, 600px);
   text-align: center;
-  box-shadow: 10px 10px 3px black;
+  box-shadow: 15px 15px 2px black;
 }
