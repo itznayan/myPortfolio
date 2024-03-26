@@ -110,28 +110,22 @@ nav {
 }
 
 .nav-links>li:hover span {
-  transform: translateY(3px);
+  transform: translate(-2px, 2px);
   background-color: black;
   filter: invert(0);
   color: white;
-  border: 2px solid black;
-  border-radius: 50%;
+  border-radius: 30%;
   transition: all 600ms ease-in-out;
-
+  scale: 1.3;
 
 }
 
-
-
 .nav-links>li span:hover {
-  transform: translateY(0px);
+  transform: translateY(2px);
   background-color: black;
   filter: invert(1);
   color: white;
-  border-radius: 50%;
-  scale: 1.1;
-
-
+  scale: 1;
 }
 
 
@@ -677,7 +671,7 @@ article {
 .show {
   opacity: 1;
 
-  animation: swing-in-right-bck 2.4s cubic-bezier(0.175, 0.885, 0.320, 1.275) 200ms both;
+  animation: swing-in-right-bck 2.4s cubic-bezier(0.175, 0.885, 0.320, 1.275) 550ms both;
 }
 
 #desktop-nav {
@@ -685,7 +679,7 @@ article {
 }
 
 #profile {
-  animation-delay: 500ms;
+  animation-delay: 450ms;
 
 }
 
