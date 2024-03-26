@@ -350,19 +350,22 @@ button {
 
 button:hover {
   color: black;
+  border: 1px solid black;
 }
 
 button:after {
   content: " ";
-  background: rgb(255, 255, 255);
+  background: #fbf5f5;
   position: absolute;
   z-index: -1;
   left: -20%;
   right: -20%;
   top: 0;
+  border: 10px solid black;
+  border-radius: 50%;
   bottom: 0;
   transform: skewX(-45deg) scale(0, 1);
-  transition: all 0.5s;
+  transition: all 0.6s ease-in-out;
 }
 
 @keyframes in-filter {
