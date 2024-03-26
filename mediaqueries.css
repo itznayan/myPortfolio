@@ -25,6 +25,10 @@
     padding: 0;
   }
 
+  .about-pic {
+    margin: 2rem auto;
+  }
+
   #desktop-nav {
     display: none;
   }

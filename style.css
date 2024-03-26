@@ -426,7 +426,7 @@ button:hover:after {
   display: flex;
   height: 300px;
   width: 300px;
-  margin: 2rem auto;
+  margin: 2rem;
 
 }
 
