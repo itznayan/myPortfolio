@@ -426,7 +426,8 @@ button:hover:after {
   display: flex;
   height: 300px;
   width: 300px;
-  margin: 3cap;
+  margin: 2rem auto;
+
 }
 
 /*ABOUT*/
@@ -444,11 +445,14 @@ button:hover:after {
 .about-details-containers {
   justify-content: center;
   flex-direction: column;
+
 }
 
 .about-containers,
 .about-details-containers {
   display: flex;
+
+
 }
 
 .about.pic {
