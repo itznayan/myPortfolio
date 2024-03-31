@@ -89,3 +89,5 @@ VANTA.BIRDS({
   alignment: 22.0,
   quantity: 4.0,
 });
+
+//footer

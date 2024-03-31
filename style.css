@@ -94,22 +94,19 @@ nav {
   font-family: "Edu VIC WA NT Beginner", cursive;
 }
 
-.nav-links {
-
-  border: 1px solid black;
-  box-shadow: 2px 2px 8px rgb(183, 183, 160);
-
-}
 
 
 .nav-links {
-  background-color: rgba(255, 252, 249, 0.792);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: white;
   padding: 20px;
   border: none;
   border-bottom-right-radius: 50px;
   border-top-left-radius: 50px;
   transform: translate(50px);
   gap: 2rem;
+  border: 1px solid black;
+  box-shadow: 2px 2px 8px rgb(183, 183, 160);
   list-style: none;
   font-weight: 100;
   font-size: 1.5rem;
@@ -118,14 +115,16 @@ nav {
 
 .nav-links li a {
   padding-left: 3px;
+  color: black;
+}
 
-
+.nav-links li a:hover {
+  color: rgb(117, 26, 202);
 }
 
 .nav-links>li:hover span {
   transform: translate(-2px, 2px);
   background-color: black;
-  filter: invert(0);
   color: white;
   border-radius: 30%;
   transition: all 600ms ease-in-out;
@@ -136,7 +135,6 @@ nav {
 .nav-links>li span:hover {
   transform: translateY(2px);
   background-color: black;
-  filter: invert(1);
   color: white;
   scale: 1;
 }
@@ -163,13 +161,14 @@ a:hover {
 
 .logo {
 
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-family: marchel;
   transform: translate3d(-4rem, 0rem, 0);
 }
 
 .section__pic-container img {
-  z-index: -1;
+  z-index: -10;
+
 }
 
 
@@ -204,8 +203,7 @@ a:hover {
 
 .menu-links {
   position: absolute;
-  top: 100%;
-  right: 0;
+  z-index: 10;
   background-color: white;
   width: fit-content;
   max-height: 0;
@@ -214,30 +212,36 @@ a:hover {
 }
 
 .menu-links a {
+  z-index: 10;
   display: block;
-  padding: 10px;
+  padding: 5px;
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   color: black;
   text-decoration: none;
 }
 
 .menu-links li {
   list-style: none;
+  z-index: 10;
+
 }
 
 .menu-links.open {
-  min-height: 220px;
+  min-height: 170px;
+  z-index: 10;
+  opacity: 1;
+  right: 30px;
+  top: -45px;
+
 }
 
 .menu-links.open a:hover {
+  z-index: 10;
   scale: 1;
+  color: rgb(127, 27, 220);
   transition: all ease-in-out 350ms;
-  border-bottom: 1px solid black;
   border-radius: 100px;
-  box-shadow: 2px 5px 3px rgba(0, 0, 0, 0.5);
-  box-sizing: border-box;
-
 }
 
 .text-container {
@@ -288,13 +292,17 @@ section {
   justify-content: center;
   gap: 5rem;
   height: 80vh;
+  scale: 1.;
+  margin-top: 30px;
+  animation-delay: 450ms;
 }
 
 .section__pic-container {
   display: flex;
   height: 360px;
   width: 450px;
-  margin: auto 0;
+  margin: 0;
+
 }
 
 .section__text {
@@ -407,9 +415,7 @@ button:after {
 .section__pic-container img {
 
   animation: in-filter 2s ease-in-out 1;
-
   border-radius: 50%;
-
   filter: drop-shadow(5px 5px 10px rgb(249, 247, 247));
 }
 
@@ -598,6 +604,7 @@ article .icon {
   justify-content: center;
   flex-direction: column;
   height: 70vh;
+
 }
 
 .contact-info-upper-container {
@@ -636,14 +643,16 @@ article {
 }
 
 .menu-links {
+  transition: all ease-in-out 650ms;
+  opacity: 0;
   margin-top: 10px;
   background-color: rgba(255, 250, 255, 1);
-  box-shadow: 4px 4px 4px black;
-  border-radius: 1px;
-  gap: 4px;
+  border: 1px solid black;
+  border-radius: 10% 0 20% 0;
+  gap: 1px;
   display: flex;
   flex-direction: column;
-  border-radius: 10%;
+  z-index: 10;
 }
 
 .extra-back {
@@ -657,11 +666,6 @@ article {
   transition: all ease-in-out 650ms;
   border-bottom-right-radius: 50px;
 
-}
-
-#profile {
-  scale: 1.;
-  margin-top: 30px;
 }
 
 #about {
@@ -699,11 +703,58 @@ article {
   animation-delay: 15ms;
 }
 
-#profile {
-  animation-delay: 450ms;
-
+.footer {
+  height: 100px;
+  width: 100px;
+  background: radial-gradient(ellipse at center, rgba(255, 254, 234, 1) 0%, rgba(255, 254, 234, 1) 35%, #B7E8EB 100%);
+  overflow: hidden;
 }
 
-.nav-links {
-  filter: invert();
+.ocean {
+  height: 5%;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: #015871;
 }
+
+.wave {
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/85486/wave.svg) repeat-x;
+  position: absolute;
+  top: -198px;
+  width: 6400px;
+  height: 198px;
+  animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
+  transform: translate3d(0, 0, 0);
+}
+
+.wave:nth-of-type(2) {
+  top: -175px;
+  animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) -.125s infinite, swell 7s ease -1.25s infinite;
+  opacity: 1;
+}
+
+@keyframes wave {
+  0% {
+    margin-left: 0;
+  }
+
+  100% {
+    margin-left: -1600px;
+  }
+}
+
+@keyframes swell {
+
+  0%,
+  100% {
+    transform: translate3d(0, -25px, 0);
+  }
+
+  50% {
+    transform: translate3d(0, 5px, 0);
+  }
+}
+
+/* footer */
