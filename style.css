@@ -712,11 +712,13 @@ article {
 
 .ocean {
   height: 5%;
-  width: 100%;
+  width: 100vw;
   position: absolute;
   bottom: 0;
   left: 0;
   background: #015871;
+  z-index: -10;
+
 }
 
 .wave {
@@ -737,6 +739,7 @@ article {
 
 @keyframes wave {
   0% {
+
     margin-left: 0;
   }
 
@@ -754,6 +757,7 @@ article {
 
   50% {
     transform: translate3d(0, 5px, 0);
+
   }
 }
 
