@@ -21,7 +21,7 @@ function openLinkInNewTab(url) {
 }
 
 var typed = new Typed("#element", {
-  strings: ["Frontend  Developer", " Android Developer"],
+  strings: ["Frontend Developer", " Mobile App Developer"],
   typeSpeed: 130,
   loop: Infinity,
 });
